@@ -1,6 +1,9 @@
 # Analytica
 
-Analytica is a tool for running the analytical engine.
+This is the official repo for the ICLR 2026 paper "Analytica: Soft Propositional Reasoning for Robust and Scalable LLM-Driven Analysis".
+
+Analytica is built based on the LLLM framework (https://github.com/chengjunyan1/lllm), check lllm.one for details.
+
 
 ## Installation
 
