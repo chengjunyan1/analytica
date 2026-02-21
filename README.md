@@ -1,8 +1,6 @@
 # Analytica
 
-This is the official repo for the ICLR 2026 paper "Analytica: Soft Propositional Reasoning for Robust and Scalable LLM-Driven Analysis". Demo can be found here at https://analyt1.com/.
-
-Analytica is built based on the LLLM framework (https://github.com/chengjunyan1/lllm), check lllm.one for details.
+This is the official repo for the ICLR 2026 paper "Analytica: Soft Propositional Reasoning for Robust and Scalable LLM-Driven Analysis". Demo can be found here at https://analyt1.com/. Analytica is built based on the LLLM framework (https://github.com/chengjunyan1/lllm), check lllm.one for details.
 
 
 ## Installation
@@ -86,3 +84,18 @@ else:
 ```
 
 The results will be saved in the ckpt directory.
+
+
+## Cite
+
+```bibtex
+@inproceedings{
+cheng2026analytica,
+title={Analytica: Soft Propositional Reasoning for Robust and Scalable {LLM}-Driven Analysis},
+author={Junyan Cheng and Kyle Richardson and Peter Chin},
+booktitle={The Fourteenth International Conference on Learning Representations},
+year={2026},
+url={https://openreview.net/forum?id=9cFT6u82uh}
+}
+```
+
