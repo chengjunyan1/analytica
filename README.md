@@ -1,6 +1,6 @@
 # Analytica
 
-This is the official repo for the ICLR 2026 paper "Analytica: Soft Propositional Reasoning for Robust and Scalable LLM-Driven Analysis".
+This is the official repo for the ICLR 2026 paper "Analytica: Soft Propositional Reasoning for Robust and Scalable LLM-Driven Analysis". Demo can be found here at https://analyt1.com/.
 
 Analytica is built based on the LLLM framework (https://github.com/chengjunyan1/lllm), check lllm.one for details.
 
