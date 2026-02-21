@@ -1,0 +1,87 @@
+name: default
+knowledge_cutoff: 2024-06-01 
+log_type: none # localfile
+random_seed: 42
+min_days_financial: 30
+min_days_predmarket: 7
+max_markets: 5
+time_horizons: ['1y'] # ['1y','1m','3m','6m']
+activate_events: ['stock','crypto','forex','commodity','index','fund','kalshi','polymarket']
+activate_proxies: ['fmp','msd','fred','gt','exa'] #,'wa', 'gkg', 'pm', 'kb'
+max_exception_retry: 3 
+max_interrupt_times: 5
+max_query_retry: 5
+max_llm_recall: 0
+threshold: 0.7 # need to tune 
+system_type: basic # 'basic'
+agent_type: prover #  'random', 'vanilla', 'prover', 'analytica', 'deepresearch' 
+long_only: true # only analyze long options for long-short pairs
+one_side_only: false # only analyze one side of binary options
+cross_selection_max: 2
+cross_selection_total: # setting for cross selection experiment, 750 in total
+  stock: 200
+  crypto: 20
+  forex: 40
+  commodity: 40
+  index: 150
+  fund: 100
+  any: 200
+agent_configs:
+  vanilla:
+    model_name: o4-mini-2025-04-16 # o4-mini-2025-04-16
+    system_prompt_path: vanilla/system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  vanilla_prover:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: vanilla/vanilla_prover_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  prover:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: prover/system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  analyzer:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/analyzer_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  synthesizer:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/synthesizer_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  linear_analyzer:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/linear_analyzer_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  linear_synthesizer: 
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/linear_synthesizer_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  logical_analyzer:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/logical_analyzer_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  logical_synthesizer:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/logical_synthesizer_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+prove_configs:
+  truncate_dialog: true
+  max_proof_steps: 20
+  debug_max_retries: 5
+  max_n_leaves: 10
+  max_concurrent_prove: 20
+  max_proof_retries: 3
+  abs_intercept_max: 0.1
+  prover_type: programming # vanilla, deep_research
+  deep_research_model: o3-deep-research # o4-mini-deep-research-2025-06-26
+  noise_level: 0.0 # from 0.0 to 1.0
+
+

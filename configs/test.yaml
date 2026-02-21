@@ -1,0 +1,30 @@
+name: test
+log_type: none
+time_horizons: ['1y'] # ['1y','1m','3m','6m']
+activate_events: ['stock','crypto','forex','commodity','index','fund','kalshi','polymarket']
+activate_proxies: ['fmp','msd','fred','gt','exa'] #,'wa', 'gkg', 'pm', 'kb'
+agent_type: analytica #  'random', 'vanilla', 'prover', 'analytica', 'deepresearch' 
+threshold: 0.7 # need to tune 
+agent_configs:
+  vanilla:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: vanilla/system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  prover:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: prover/system
+    temperature: 0.1
+    max_completion_tokens: 20000
+  analyzer:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/analyzer_system
+    temperature: 0.1
+    max_completion_tokens: 20000 
+  synthesizer:
+    model_name: o4-mini-2025-04-16
+    system_prompt_path: analytica/synthesizer_system
+    temperature: 0.1
+    max_completion_tokens: 20000
+prove_configs:
+  max_n_leaves: 8

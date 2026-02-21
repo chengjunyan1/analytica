@@ -1,0 +1,20 @@
+{
+    "name": "test1",
+    "dir": "/home/junyanc/analytica/.tmp/sandbox/sessions/test1",
+    "metadata": {
+        "proxy": {
+            "activate_proxies": [
+                "fmp",
+                "msd",
+                "fred",
+                "gt",
+                "exa"
+            ],
+            "cutoff_date": null,
+            "deploy_mode": false
+        },
+        "project_root": "/home/junyanc/analytica"
+    },
+    "notebook_file": "/home/junyanc/analytica/.tmp/sandbox/sessions/test1/test1.ipynb",
+    "programming_language": "python"
+}

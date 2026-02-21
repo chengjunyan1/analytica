@@ -1,0 +1,34 @@
+openai
+anthropic
+art
+cairosvg
+matplotlib
+exa_py
+gdown
+PyYAML
+notebook 
+nbformat
+jupyter_client 
+ipykernel
+yfinance
+ipywidgets
+imgkit
+lxml
+pandas
+kaleido
+tiktoken 
+plotly
+googlesearch-python
+fake-useragent
+datasets
+
+
+# streamlit
+# streamlit-community-navigation-bar # https://github.com/streamlit-community/streamlit-navigation-bar 
+# streamlit_markmap
+# streamlit_timeline
+# streamlit-flow-component
+# st-theme
+
+# conda install -c conda-forge wkhtmltopdf
+# python -m ipykernel install --user --name "analytica" --display-name "Python (analytica)"
